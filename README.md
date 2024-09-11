@@ -36,7 +36,7 @@ O **API Gateway** atua como um ponto de entrada unificado para as requisições 
 
 ```bash
 service-discovery/
-├── discovery-server/     # Eureka Server
+├── service-discovery/     # Eureka Server
 ├── hello-api/            # Exemplo de microsserviço registrado no Eureka Server
 ├── ola-api/              # Outro microsserviço registrado no Eureka Server
 └── api-gateway/          # API Gateway para gerenciar as requisições
