@@ -1,0 +1,47 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceDiscoveryApplication<service-discovery>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.sardeiro.service_discovery.ServiceDiscoveryApplication",
+      "projectName": "service-discovery",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60060 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-discovery"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OlaApiApplication<ola-api>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.sardeiro.ola_api.OlaApiApplication",
+      "projectName": "ola-api",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60076 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ola-api"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HelloApiApplication<hello-api>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.sardeiro.hello_api.HelloApiApplication",
+      "projectName": "hello-api",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60078 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hello-api"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.sardeiro.api_gateway.ApiGatewayApplication",
+      "projectName": "api-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
